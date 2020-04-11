@@ -1,0 +1,515 @@
+﻿id,user_id,topic_id,title,description,resource_path,body,created,modified
+1,3,1,Recursive String Search,Find string in files recursively through a specified directory...,/files/RecursiveStringSearch,"..]#> grep  --color -r ""COUNT"" modules/
+   OR
+..]#> egrep --color -rn "" GROUP BY"" modules/",2009-06-13 01:07:25,2009-06-13 01:07:25
+2,3,1,Service Network Restart,restart network connections/services.,/files/ServiceNetworkRestart,..#]> service network restart,2009-06-13 01:20:21,2009-06-13 01:20:21
+3,3,1,The quick NOte.,a quick note test.,/quickNooote,"This is a test,. <br> this should be on the next line.",2009-06-22 16:50:34,2009-06-22 16:50:34
+4,3,1,This is an image display test note.,Displays image in this notes area.,testimage,"This is a test image.
+The line below should display the image.
+<BR/>
+<img src='/notesimgs/testimage.png'/>
+<BR/>
+Hope this works.",2009-07-02 12:43:04,2009-09-28 23:19:21
+7,4,1,Add sudoer.,Add a sudo authorization to a normal user .,/sudoer,"<code>..]#> cd \etc  </code>-go to ""/etc"" directory.<br>
+<code>..]#> visudo  </code>OR <code>..]#> vim sudoers</code> -edit sudoer file.<br>
+
+ - add ""nico ALL=(ALL)  ALL"" after the line ""root ALL=(ALL)  ALL""(add new sudoer, nico as the username.)<br>
+ - press ESC and type "":x"" to save.",2009-07-03 12:43:40,2010-03-11 09:40:46
+10,3,3,Altering 2 tables on a single action-controller,Adding data on 2 tables without leaving the current controller.,"","I've just solve a problem i have on my login page, where if a certain user is not yet registered, that user must be able to signup with the option to specify user informations like email, family name, etc.. Now this needs to edit at least two table, the users table and the users_info table or profile table, which ever you prefer. To do this please follow this link,  
+<a href='http://book.cakephp.org/view/84/Saving-Related-Model-Data-hasOne-hasMany-belongsTo'>click here</a>.",2009-09-28 23:25:42,2009-11-08 00:41:15
+12,3,3,Setting CakePHP's webroot as document root.,tips on deploying CakePHP as main web page.,"","&nbsp&nbsp&nbsp A CakePHP application has 3 important directories.  ""/cake"", ""/app"" and ""/vendor"". To avoid having problems in deploying, do not rename the  ""/app"" folder to anything if you want it to be your web host's root directory. Otherwise it will always display the <span style='color: blue;'>/app</span>'s new name to the url address.
+<br><br>
+&nbsp&nbsp&nbsp example:<br> 
+&nbsp&nbsp If you rename ""/app"" folder to something like ""/newApp"", instead of having a url of ""http://linonico.com/users/about"", it will display ""http://linonico.com/newApp/users/about"".",2009-11-10 03:15:48,2010-08-31 00:02:52
+9,3,2, Uploading Image to this Notes' module., how to upload images when an image is needed to illustrate a note.,NA,"To upload image just browse for the image using the buttons below and click on 'Upload File' then wait for the form to refresh the Note body so as to reflect the path of the uploaded image. below is an example:<br/><img src='/notesimgs/k1aLT_07Jul2009_135657_DragonImg2.jpg'/>
+<br/>
+See the image now? =)",2009-07-07 13:57:11,2009-07-11 00:18:29
+11,3,1,Edit/Restart Apache Settings,Alter Apache settings.,"","&nbsp&nbsp At the terminal execute the commands as seen below:<BR>
+&nbsp&nbsp <span style='font-family: courier;'>vi /etc/httpd/conf/httpd.conf</span>	 <span style=' color: #0000FF;'><i>- edit php/apache settings</i></span>
+<BR>
+&nbsp&nbsp <span style='font-family: courier;'>/etc/init.d/httpd restart</span>    <span style='color: #0000FF;'><i> -  restart apache.</i></span>",2009-11-05 17:14:15,2009-11-06 18:56:11
+13,3,2,Joomla Column Manipulation,How to remove a column,"","To remove a column in Joomla. For example the 'right' column, just disable all modules assigned to the 'right' column and the rest of the page will simply fill to the new gap when the 'right' column is omitted.",2009-11-19 02:25:59,2009-11-19 02:25:59
+14,3,1,TAR Usage,Compressing directories/files with tar command.,"","<span style='font-family: courier;'>tar -czvf app.tar.gz app/</span>
+<span style=' color: #0000FF;'><i> &nbsp &nbsp &nbsp -compress to a tarball.</i></span>
+<br>
+<span style='font-family: courier;'>tar -xzvf filename.tar.gz</span>
+<span style=' color: #0000FF;'><i> &nbsp &nbsp &nbsp -untar and ungzip a file to current directory.</i></span>
+",2009-12-22 00:23:23,2009-12-22 00:28:13
+15,3,4,Connect to secured router.,Basic requirments in connecting to a secured wireless router.,"","Be sure to have the following ready:
+<span style='color: blue;'>. 
+<br/>&nbsp Wep/tkip network id.
+<br/>&nbsp password.
+<br/>&nbsp add your device's nic address to the router filter. </span> ",2010-01-16 09:59:41,2010-01-29 00:12:55
+16,3,1,Restart Apache server on Mac 10.6,How to restart Apache server on Mac 10.6,"","To restart Apache server on Mac.. On the terminal/console, type: 
+<span style='font-family: courier; color: blue;'>
+<br/>&nbsp sudo apachectl graceful
+</span> ",2010-02-19 17:04:16,2010-02-19 17:07:31
+17,3,5,Setting iPhone App Icon,Changing iphone's app icon using the CodeX iPhone SDK.,"","<span style='font-family: courier; color: blue;'>
+<br/>
+1. Create the Icon considering the following requirements:
+<br/>
+&nbsp&nbsp&nbsp - Image must be 57x57 pixels in size.
+<br/>
+&nbsp&nbsp&nbsp - File name must be named ""icon.png""
+<br/>
+<br/>
+2. Save it inside the your project's top folder(this should normally be along with the project file).
+<br/>
+<br/>
+3. Go to Menu's Project->Add to Project... Then select the Icon file. <span style='font-family: courier; color: red;'>(This is important some simply specifies the filename at the .pList file which does nothing.)</span>
+<br/>
+<br/>
+4. That's it, rebuild your project and the icon should now be updated.
+</span> ",2010-03-02 16:59:32,2010-03-02 17:09:19
+18,3,1,Apache version,Command to determine the Apache version installed.,"","<span style='font-family: courier; color: blue;'>httpd -v</span>",2010-03-10 12:39:02,2010-03-10 12:39:54
+19,3,4,Mac OS 10.6: Starting MySQL v5.1.44,Starting MySQL from terminal in Mac OS 10.6,"","if you're getting this error ""ERROR 2002: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)"",  chances are you haven't started MySQL yet. Try the commands below:
+<span style='font-family: courier; color: blue;'>
+<br/>&nbsp&nbsp&nbsp
+cd /usr/local/mysql;
+<br/>&nbsp&nbsp&nbsp
+sudo echo
+<br/>&nbsp&nbsp&nbsp
+sudo ./bin/mysqld_safe &
+</span>",2010-03-16 16:35:39,2010-03-16 16:37:48
+20,3,1,Finding files in linux,Find files modified at a specified time.,"","<span style='font-family: courier; color: blue;'>
+Find modified files starting 5 days ago.
+</span>
+<br/>
+&nbsp&nbsp&nbsp find / -mtime -5 -print
+<br/>
+<br/>
+<span style='font-family: courier; color: blue;'>
+To find files on a specific time frame. Example below shows all modified files from 3 days ago till 1 day earlier.
+</span>
+<br/>
+&nbsp&nbsp&nbsp find . -ctime +1 -a -ctime -3",2010-03-18 17:38:20,2010-03-18 17:52:20
+21,3,1,SVN Routine before editing SVN controlled file(s).,Things to do before altering SVN source controlled file(s).,"","<span style='color: blue;'>
+Update the whole project first to sync changes committed in the repository.
+</span>
+<br/>
+<span style='font-family: courier;'>
+&nbsp&nbsp&nbsp svn update
+</span>
+<br/>
+<span style='font-style:italic; font-size: 12px; width: 500px; ' >
+ (one thing to note about update is it doesn't update files that you have altered and uncommitted. If you really want to get an updated copy of a file then just delete the file first or move it to a backup copy then execute update.)
+</span>
+<br/>
+<br/>
+<span style='color: blue;'>
+View commit Log comments for possible relevant changes.
+</span>
+<br/>
+<span style='font-family: courier;'>
+&nbsp&nbsp&nbsp svn log
+</span>
+<br/>
+<br/>
+<span style='color: blue;'>
+View your own uncommitted changes, you may have some changes that needs to be committed prior to you next coding.
+</span>
+<br/>
+<span style='font-family: courier;'>
+&nbsp&nbsp&nbsp svn status
+</span>",2010-03-26 11:26:20,2010-03-26 11:47:23
+22,3,3,Get Next Auto Increment Value,cakePHP: Retrieving next auto increment value from a model before adding the another record.,"","<br /><br />
+<span style='font-family: courier; color: BLACK;'>
+&nbsp$findResult= $this-><span style='color: #FF0000;'>MODEL</span>->find('first',<br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp array('fields'=>'id', 'order'=>'<span style='color: #FF0000;'>MODEL</span>.id DESC'));<br/>
+&nbsp$lastID = $findRes['<span style='color: #FF0000;'>MODEL</span>']['id'];<br />
+&nbsp$nextID = $lastID + 1;
+</span>",2010-06-04 13:09:25,2010-06-19 01:43:22
+23,3,3,Clear Model Cache,Tips on changing cakePHP's tables,"","Ever wonder changing something on the database, like adding a new table field and then manipulating it on the controller, then you thought everything is going well until you find out that the table field you just added is not updating?? Try deleting the entire /tmp/cache/model folder, then you're good to go.",2010-06-18 14:42:10,2010-06-18 14:45:04
+25,3,3,CakePHP: [this] keyword to access its child. ,"How to access an html element's child using ""this"" keyword.","","jQuery(""img"", this);
+",2010-06-24 11:04:59,2010-06-24 11:04:59
+26,3,1,MySQL: Get and Set a Table's auto_increment value.,Query mySQL table's status to determine its auto_increment value.,"","1. <span style='font-family: courier; color: blue;'>SHOW TABLE STATUS LIKE '[tablename]';</span><br/>
+2. <span style='font-family: courier; color: blue;'>ALTER TABLE [tablename] auto_increment=[value]</span>;",2010-06-29 22:40:00,2010-06-29 22:43:08
+27,3,1,How to fix: [CentOS 5.4] Timezone database is corrupt.,Troubleshooting a webserver having a fatal error with timezone.,"","<span style='font-family: courier; color: BLUE;'>Problem:</span><br />If you get into trouble with your webserver saying: [<span style='font-family: courier; color: BLACK;'>PHP Fatal error: date()/strftime() [function.strftime]: Timezone database is corrupt - this should *never* happen! in....</span>]
+<br /><br />
+<span style='font-family: courier; color: BLUE;'>Solution:</span><br />
+Just reinstall timezone data. -> <span style='font-family: courier; color: BLACK;'>yum install tzdata</span>",2010-07-26 17:17:53,2010-07-26 17:25:00
+28,3,1,SELinux:[CentOS 5.4] MySQL-PHP Remote Database script error fix.,Fixing PHP script unable to connect to remote MySQL database.,"","&nbsp&nbsp If you haven't disabled SELinux, by default it restricts httpd/Apache to connect to a remote database. Which explains why we can connect through terminal commands but cannot when using PHP scripts.<BR /><BR />
+
+&nbsp&nbsp To fix this, type in the following to enable SELinux to allow Apache connection to remote database:<BR /><BR />
+
+&nbsp&nbsp&nbsp <span style='font-family: courier; color: GREEN; '>setsebool -P httpd_can_network_connect=1</span>",2010-07-27 09:23:35,2010-07-27 09:33:01
+29,3,1,Subversion: Switching Repository..,How to change from one host repository to another.,"","svn switch --relocate [old URL] [new URL]
+<BR />
+ex.:
+<BR />
+<span style=""font-family: courier; color: green;"">svn switch --relocate http://9289.com.au/repos/www.store.9289.com.au/trunk http://ideam.com.au/repos/9289store/trunk </span>
+<br />
+<br />
+See <a href=""http://svnbook.red-bean.com/en/1.1/re27.html"">svnbook</a> for more details on this.",2010-07-30 15:11:29,2010-07-30 15:54:53
+30,3,1,MySQL: importing-export mysql table.,Exporting existing table as a new table in another database.,"","At the source database server, execute this terminal command:<br />
+<span style=""color: black; font-family: courier;"">mysqldump -u root -p [FromDatabaseName] [tableName] > [filePath.sql]</span>
+<br /><br />
+Then copy the output file(""filePath.sql"") to the destination database server and execute this command on the terminal:<br />
+<span style=""color: black; font-family: courier;"">mysql -u root -p [ToDatabaseName] < [filePath.sql]</span>
+<br /><br />
+If you want, you may also rename the exported table on the destination database:
+<br />
+<span style=""color: black; font-family: courier;"">mysql -u root -p</span><br />
+<span style=""color: black; font-family: courier;"">rename table tableName to newTableName;</span>",2010-08-11 15:46:02,2010-08-11 16:30:08
+31,3,1,Scratch,Notes to be Added later...,"","Queries below shows how to import data from a CSV file to a new table.... 
+<pre class=""brush: js;"">
+CREATE TABLE 
+      auspost(Pcode INT(10),
+              Locality VARCHAR(100),
+              State VARCHAR(10),
+              Comments VARCHAR(100),
+              DeliveryOffice VARCHAR(100),
+              PresortIndicator INT(10),
+              ParcelZone VARCHAR(10),
+              BSPnumber INT(10),
+              BSPname VARCHAR(100),
+              Category VARCHAR(100)
+            );
+</pre>
+...then
+<pre class=""brush: js;"">
+LOAD DATA LOCAL INFILE 'pc-full_20100224.csv' 
+INTO TABLE auspost 
+    FIELDS TERMINATED BY ',' 
+    LINES TERMINATED BY '\n';
+</pre>",2010-08-11 17:00:22,2014-01-29 11:13:56
+32,3,1,"SVN: shell-agnostic way to ""svn add"" all new files...",Add all files to svn repo..,"","<span style=""color: black; font-family: courier;"">svn status | grep ""^?"" | awk -F ""      "" '{print $2}' | tr ""\n"" ""\0"" | xargs -0 svn add</span>",2010-08-11 17:13:57,2010-08-11 17:13:57
+33,3,1,SELinux: NFS-Apache/httpd setup,How to enable Apache to read NFS mounted directories while SELinux is enabled.,"","You might need to use the command similar to one below if you are on redhat distibution like CentOS or Fedora...<BR />
+<!--<span style=""color: green; font-family: courier;"">-->
+<pre class=""brush: js;"">
+...
+mount -t nfs -o context=system_u:object_r:httpd_sys_content_t 192.168.1.7:/var/www/html/images /var/www/html/images
+</pre>
+<!-- </span> -->
+<BR /><BR />
+If that still does not work, then let SELinux allow Apache to read on the mounted directory..<BR />
+<pre class=""brush: js;"">
+setsebool -P httpd_use_nfs on
+OR
+sudo /usr/sbin/setsebool -P httpd_use_nfs on</pre>
+<br />
+<br />
+<br />
+<span style=""color: #C0C0C0; font-family: tahoma;"">References:</span><br />
+<a href=""http://wiki.centos.org/TipsAndTricks/SelinuxBooleans"">http://wiki.centos.org/TipsAndTricks/Selinux...</a>
+<br />
+<a href=""http://www.redhat.com/docs/manuals/enterprise/RHEL-5-manual/en-US/RHEL510/Deployment_Guide/rhlcommon-section-0097.html"">http://www.redhat.com/docs/manuals/enterprise/RHEL-5...</a>
+<br />
+<a href=""http://www.linuxconfig.org/HowTo_configure_NFS"">http://www.linuxconfig.org/HowTo_configure_NFS</a>
+",2010-08-13 14:57:43,2011-01-07 13:05:30
+34,3,1,Linux How-To: Add user,Add linux user and specify password,"","Execute the following commands on the terminal...
+<BR /><BR />
+<span style=""font-family: courier; color: GREEN;""> 
+adduser [uname]
+</span>
+<BR />
+... then change the user password
+<BR />
+<span style=""font-family: courier; color: GREEN;""> 
+passwd [uname]
+<BR />
+</span>
+<span style=""font-family: courier; font-style: italic; color: BLACK;"">
+<BR />
+&nbsp&nbsp&nbsp   Changing password for user [uname].
+<BR />
+&nbsp&nbsp&nbsp   New UNIX password:  [*****]
+<BR />
+&nbsp&nbsp&nbsp   Retype new UNIX password: [*****]
+<BR />
+passwd: all authentication tokens updated successfully.
+</span>",2010-08-20 10:21:51,2010-08-20 10:26:26
+35,3,1,Samba: Sharing Files between Fedora 12 and Windows 7...,How to set up and configure samba to share files between Fedora 12 and Windows 7 in a wireless WPA2 network.,"","First of all, ensure network connectivity...<br />
+  - Because I need to map my linux drive to windows, I need to setup a static ip to my wireless port in my Fedora 12 desktop. To do this I edited my wpa_supplicant. as follows:<br />
+   @ /etc/sysconfig/wpa_supplicant file, the following lines should be present...<br/>
+INTERFACES=""-iwlan0""<br/>
+DRIVERS=""-Dwext""<br/>
+OTHER_ARGS=""-f /var/log/wpa_supplicant.log""<br/>
+    @  /etc/wpa_supplicant/wpa_supplicant.conf<br/>
+ctrl_interface=/var/run/wpa_supplicant<br/>
+ctrl_interface_group=0<br/>
+eapol_version=1<br/>
+ap_scan=1<br/>
+fast_reauth=1<br/>
+network={<br/>
+        scan_ssid=1<br/>
+        key_mgmt=WPA-PSK<br/>
+        proto=WPA RSN<br/>
+        pairwise=CCMP TKIP<br/>
+        group=CCMP TKIP WEP104 WEP40<br/>
+}<br/>
+",2010-08-25 10:45:01,2010-08-25 10:45:01
+36,3,1,Mount Bind,How to mount a directory just like the symbolic link but without exposing the parent directories.,"","Syntax:<br />
+<span style='font-family: courier; color: blue;'>mount --bind [mountPath] [PathToMount]</span><br /><br />
+e.g.:<br />
+<span style='font-family: courier; color: green;'>
+mount --bind /var/www/reprod/yourdr/dev.mydr.com.au/webroot/img/emailcamp/ /home/emailcamp/emailcamp_bind
+</span>",2010-10-02 06:17:43,2015-01-14 16:14:48
+37,3,1,Tip: Search and Remove file/folder recursively.,Remove a file/folder recursively using 'find' command.,"","Ever wonder how to remove svn folders in your project? Since SVN stores "".svn"" folders on each folder in your projects, you can remover them using the commands below...
+<BR /><BR />
+<pre class=""brush: js;"">
+find ./ -name "".svn"" -exec rm -Rvf {} \;
+oR
+find ./ -name "".svn"" | xargs rm -Rvf
+</pre>",2010-10-02 06:22:52,2011-02-21 09:12:51
+38,3,1,SVN: How to fix Obstructed changes.,"Fixing Obstructed(""~"") changes in  SVN.","","- Move the obstucted file to a temporary location and delete all "".svn"" files and directories on it. <br />
+- run <span style='font-family: courier; color: green;'>svn rm [obstucted path]</span>. <br />
+- run <span style='font-family: courier; color: green;'>svn cleanup</span>. <br />
+- run <span style='font-family: courier; color: green;'>svn commit -m ""...""</span>. <br />
+- run <span style='font-family: courier; color: green;'>svn update</span>. <br />
+- then finally move back the obstructed file/directory. Update/Commit if necessary.
+",2010-11-05 10:31:33,2010-11-05 10:33:09
+39,3,1,"Terminal: ""du"" Usage...",Get Total sizes in the current directory.,"",du --max-depth=1 -h,2010-11-09 14:21:28,2010-11-09 14:21:28
+40,3,1,SELinux: Relabelling a file/directory,Relabelling a file/directory to allow httpd to access files/directories with SELinux enforced.,"","<p class=""notebody"">
+Relabel directory to conform to SELinux policy.
+</p>
+<pre class=""brush: js;"">
+$ chcon -R --type=httpd_sys_content_t dev_cakeyourdr/</pre>
+
+<br />
+References:<br />
+&nbsp&nbsp&nbsp&nbsp
+<a href=""http://wiki.centos.org/HowTos/SELinux#head-0f6390ddacfab39ee973ed8018a32212c2a02199"" > Wiki Centos </a>
+<br />
+&nbsp&nbsp&nbsp&nbsp
+<a href=""http://www.centos.org/docs/5/html/Deployment_Guide-en-US/rhlcommon-chapter-0017.html#sec-sel-usercontrol"" > Centos-SELinux </a>",2010-11-09 16:24:53,2015-01-14 16:14:10
+41,3,2,MySQL: View table status and Edit auto-increment,How to view table status to see details like auto-increment value and how to change them.,"","<pre class=""brush: js;"">
+SHOW TABLE STATUS LIKE ""[table_name]""
+ALTER TABLE [table_name] AUTO_INCREMENT = 100;
+</pre>
+
+<br />
+<br />
+References:<br />
+&nbsp&nbsp&nbsp&nbsp
+<a href=""http://dev.mysql.com/doc/refman/5.1/en/show-table-status.html"" >12.4.5.38. SHOW TABLE STATUS Syntax</a>
+<br />
+&nbsp&nbsp&nbsp&nbsp
+<a href=""http://dev.mysql.com/doc/refman/5.0/en/example-auto-increment.html"" >3.6.9. Using AUTO_INCREMENT</a>",2010-11-18 11:28:44,2010-12-15 12:50:13
+43,3,1,CPU/Mem info,Command to get CPU or memory info,"","<pre class=""brush: js;"">
+cat /proc/cpuinfo
+cat /proc/meminfo
+lspci
+</pre>",2011-01-11 16:07:59,2011-01-11 16:11:21
+42,3,1,Vi/Vim: search and replace.,Search and replace strings in vi/vim..,"","To repl [old_string] with [new_string]...
+<BR /><BR />
+<pre class=""brush: js;"">
+
+:%s/[old_string]/[new_string]/gc
+
+</pre>
+
+<BR /><BR />
+'g' option is for global, 'c' option is for vi/vim to ask for confirmation for every matched string.
+<BR />
+<BR />
+References:
+<BR />
+<a href=""http://vim.wikia.com/wiki/Search_and_replace"">http://vim.wikia.com/wiki/Search_and_replace</a>",2010-11-24 12:17:54,2010-12-15 12:48:21
+44,3,1,SSH Public/Private Keys,Enable secure ssh login using public/private keys.,"","First, create a public/private key pair on the client that you will use to connect to the server (you will need to do this from each client machine from which you connect): 
+
+<pre class=""brush: js;"">
+$ ssh-keygen -t rsa -b 4096
+</pre>
+<p class=""notebody"">
+This will create two files in your (hidden) ~/.ssh directory called id_rsa and id_rsa.pub. id_rsa is your private key and id_rsa.pub is your public key. 
+<br/><br/>
+Now set permissions on your private key:
+</p>
+<pre class=""brush: js;"">
+$ chmod 700 ~/.ssh
+$ chmod 600 ~/.ssh/id_rsa 
+</pre> 
+<p class=""notebody"">
+Copy the public key (id_rsa.pub) to the server and install it to the authorized_keys list: </p>
+<pre class=""brush: js;"">
+$ cat id_rsa.pub >> ~/.ssh/authorized_keys
+</pre> 
+<p class=""notebody"">
+Note: once you've imported the public key, you can delete it from the server.
+<br /><br/>
+and finally set file permissions on the server: 
+<p/>
+<pre class=""brush: js;"">
+$ chmod 700 ~/.ssh
+$ chmod 600 ~/.ssh/authorized_keys
+</pre>
+<p class=""notebody"">
+A good practice will also be to disable password authentication,  forcing use of keys.</p>
+@ /etc/ssh/sshd_config
+<pre class=""brush: js;"">
+PasswordAuthentication no
+</pre>
+<br/><br/><br/>
+<p class=""notebody""><span style=""font-weight: bold; font-style: italic;"">References...</span><br />
+<a href=""http://wiki.centos.org/HowTos/Network/SecuringSSH#head-9c5717fe7f9bb26332c9d67571200f8c1e4324bc"" >http://wiki.centos.org/HowTos/Network/SecuringSSH</a></p>
+
+",2011-01-17 11:11:31,2014-07-25 14:18:10
+47,3,1,phpMyAdmin in HTTPS,"Force SSL/https port when accessing ""phpMyAdmin""","","Add a .htaccess file to the root directory of phpMyAdmin and paste the lines below:
+<pre class=""brush: js;"">
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+</pre>
+<p class='notebody'>
+UPDATE(02Feb2014): This can now be done by just editing config.inc.php on the phpMyAdmin root directory and adding the line below:
+</p>
+<pre class=""brush: js;"">
+$cfg['ForceSSL'] = true;
+</pre>
+",2011-02-18 09:45:54,2014-02-10 10:13:06
+46,3,1,CentOS: security and SELinux,Command prompt gui for selinux/security settings.,"","<pre class=""brush: js;"">
+/usr/bin/system-config-securitylevel
+Or
+/usr/bin/system-config-securitylevel-tui
+</pre>",2011-02-15 11:47:52,2011-02-15 11:49:19
+48,3,1,Find time with days range and remove.,The example below finds all files within the same directory from 7 days ago to 3 days ago and deletes them...,"","<pre class=""brush: js;"">
+find . -ctime +3 -a -ctime -7 -exec rm {} \;
+</pre>",2011-02-21 09:10:26,2011-03-02 08:54:31
+49,3,1,MySQL : Add new user with privileges.,Add a user account having full privilege to one table only.,"","<span style=""color: black;"">Add user...</span>
+<pre class=""brush: js;"">
+mysql>  create user leo@localhost identified by 'i@mNumber4';
+</pre>
+<br />
+<span style=""color: black;"">Assign privileges...</span>
+<pre class=""brush: js;"">
+mysql>  grant all privileges on mo_dev.* to leo@localhost with grant option;
+</pre>",2011-03-07 09:21:59,2011-03-07 09:24:42
+50,3,1,SVN: --username,Change SVN's default user as saved in linux profile.,"","$ svn commit --username [your_uname] -m ""[commit_notes.]"" [changed_file]
+",2011-04-11 13:32:14,2011-04-11 13:32:14
+51,3,6,Load data  from file.,Import data to mysql table from a csv file.,"","<p></p>
+sample csv file: mo-ipad-itunes-prodID.csv 
+<pre class=""brush: js;"">
+... .. .
+com.mogeneration.ubmmedica.private.medicalobserver_,2014_01_31
+com.mogeneration.ubmmedica.private.medicalobserver_,2014_02_07
+com.mogeneration.ubmmedica.private.medicalobserver_,2014_02_14
+com.mogeneration.ubmmedica.private.medicalobserver_,2014_02_21
+com.mogeneration.ubmmedica.private.medicalobserver_,2014_02_28
+.... .. ... ..
+</pre>
+actual query:
+<pre class=""brush: js;"">
+LOAD DATA LOCAL INFILE 'mo-ipad-itunes-prodID.csv' 
+INTO TABLE itunes_productid 
+FIELDS TERMINATED BY ',' 
+LINES TERMINATED BY '\n' 
+(product_id_prefix, product_id_date) 
+SET ID=NULL, name='', status=1;
+</pre>",2014-01-29 11:41:49,2014-01-29 11:43:00
+52,3,1,"HTTPS, Setting up an SSL on RHEL/Centos Web Server.",Conviguring an openSSL SSL Keys and Certificates.,"","<p class='notebody'>
+If you haven't installed mod_ssl and openssl yet, install it.
+</p>
+<pre class=""brush: js;"">
+$ yum install mod_ssl openssl
+</pre>
+<p class='notebody'>
+Generate both the certificate and key using the command below:
+</p>
+<pre class=""brush: js;"">
+$ openssl req -x509 -days 7100 -nodes -newkey rsa:4096 -keyout apachekey.key -out apachekey.crt
+</pre>
+<p class='notebody'>
+Then copy both generated files to /etc/pki/tls/certs/
+</p>
+<pre class=""brush: js;"">
+$ cp apachekey.* /etc/pki/tls/certs/
+</pre>
+<p class='notebody'>Specify the SSL certificate and key path on the httpd configuration file.</p>
+<pre class=""brush: js;"">
+$ vim /etc/httpd/conf/httpd.conf
+</pre>
+<p class='notebody'>...sample httpd.conf file.</p>
+<pre class=""brush: js;"">
+..VirtualHost *:443...
+    SSLEngine on
+    SSLCertificateFile /etc/pki/tls/certs/apachekey.crt
+    SSLCertificateKeyFile /etc/pki/tls/certs/apachekey.key
+     .....
+        .....
+</pre>",2014-02-10 11:02:33,2014-02-10 11:20:04
+53,3,6,Create Database Table with MyISAM,Make sure when copying tables from another database to keep the ENGINE type specially if table does not need indexing.,"","<pre class=""brush: js;"">
+CREATE TABLE mytable(id INT(10)) ENGINE=MyISAM;
+</pre>",2014-03-07 11:53:26,2014-03-07 12:21:39
+54,3,2,Install WkHtmlToPdf,Install WkHtmlToPdf  from pre-compiled binary,"","<p class=""notebody"">
+Install WkHtmlToPdf  from pre-compiled binary 
+</p>
+<pre class=""brush: js;"">
+$ tar -xvf wkhtmltox-0.12.1-c22928d_linux-centos5-amd64.tar.xz
+$ mv wkhtmltox-0.12.1-c22928d wkhtmltox
+$ sudo mv wkhtmltox /etc/
+$ sudo ln -s /etc/wkhtmltox/bin/wkhtmltopdf /usr/bin/wkhtmltopdf
+</pre>
+<p class=""notebody"">
+Below is a test to see if a pdf file is generated.
+</p>
+<pre class=""brush: js;"">
+$ wkhtmltopdf http://yourdr.com.au yourdrpdf.pdf 
+</pre>
+<p class=""notebody"">
+Below is a linux command to allow SELinux to allow apache script to spawn processes for wkthml to work in conjunction with snappyPDF.
+</p>
+<pre class=""brush: js;"">
+$ setsebool -P httpd_execmem 1
+</pre>
+",2014-05-05 09:21:19,2015-01-14 16:13:36
+55,3,2,Install packages from rpm,How to install package using RPM(Redhat Package Manager),"","<p class=""notebody""></p>
+<pre class=""brush: js;"">
+$ rpm -ivh [package]
+</pre>
+<p class=""notebody"">
+i - install.<br />
+v - verbose.<br />
+h - prints progress hash.<br />
+</p>",2014-09-05 11:12:59,2014-09-05 11:16:30
+56,3,1,resize2fs command,Resize a disk to max physical size.,"","<p class=""notebody""></p>
+<pre class=""brush: js;"">
+$ resize2fs /dev/xvde
+</pre>",2014-10-15 09:19:41,2014-10-15 09:20:00
+57,3,6,To NOT or not?,When it is not good to use the NOT LIKE statement.,"","<p class=""notebody""></p>
+Query below is fine if you wanted to get all records with the given string.
+<pre class=""brush: js;"">
+SELECT * FROM `member`
+WHERE suggestion LIKE  ""Still to%""
+</pre>
+Result of above query is 15 out of 44. But when negated as shown below, it will give an inconsistent result of 12 out of 44 which is lesser than expected(29 out of 44). MySQL seem to not implement this well(NULL values are left out).
+<pre class=""brush: js;"">
+SELECT * FROM `member`
+WHERE suggestion NOT LIKE  ""Still to%""
+</pre>
+To correct the above query write the one as illustrated below instead. This will give us a result of 29 out of 44.
+<pre class=""brush: js;"">
+SELECT * FROM `member`
+WHERE suggestion NOT LIKE  ""Still to%""
+OR suggestion IS NULL
+</pre>",2015-07-01 12:05:04,2015-07-02 14:57:10
+58,3,1,How to create a .PEM login key,How to create a .PEM login key,"","<p class=""notebody""></p>
+
+<pre class=""brush: js;"">
+$ useradd newuser
+</pre>
+<pre class=""brush: js;"">
+$ ssh-keygen -b 2048 -t rsa -f key -C newuser
+</pre>
+<pre class=""brush: js;"">
+$ su - newuser
+</pre>
+<pre class=""brush: js;"">
+$ mkdir .ssh && cd .ssh
+</pre>
+<pre class=""brush: js;"">
+$ cat > authorized_keys < key.pub
+</pre>
+<pre class=""brush: js;"">
+$ chmod 0700 ~/.ssh
+$ chmod 0600 ~/.ssh/authorized_keys
+</pre>
+<p class=""notebody"">Rename the key to newuserkey.pem for a clearer file purpose</p>
+<pre class=""brush: js;"">
+$ mv key newuserkey.pem
+</pre>
+<p class=""notebody"">Then to access the server from anywhere: </p>
+<pre class=""brush: js;"">
+$ ssh -i newuserkey.pem newuser@ec2_host_name
+</pre>",2015-08-26 13:02:16,2015-08-26 13:07:28
