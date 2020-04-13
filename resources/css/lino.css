@@ -1,4 +1,16 @@
+/* 
+* Inspiration themes: https://wrapbootstrap.com/theme/ada-personal-blog-template-WB0T99698?ref=3wm
+* https://scribbler.qodeinteractive.com/personal-home/
+*/
+*, body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .navbar-light a.navbar-brand {
   color: rgba(0, 0, 0, 0.9);
   font-family: 'Montserrat', sans-serif;
+}
+
+.linonico-bar {
+  text-align: center;
 }

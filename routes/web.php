@@ -21,6 +21,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/note/import', 'NoteController@import')->name('note_import');
-Route::get('/note/{slug}', 'NoteController@view')->name('note_view');
-Route::get('/admin/note/edit/{note}', 'NoteController@admin_edit')->name('note_edit');
+Route::get('/notes', 'NoteController@index')->name('note.index');
+Route::get('/note/import', 'NoteController@import')->name('note.import');
+Route::get('/note/{slug}', 'NoteController@view')->name('note.view');
+Route::get('/admin/note/edit/{note}', 'NoteController@admin_edit')->name('note.edit');
