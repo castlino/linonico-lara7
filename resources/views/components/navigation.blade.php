@@ -4,7 +4,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="linonico-bar">
-                {{ config('app.name', 'Linonico') }} ( my notes are your notes... )
+                {{ config('app.name', 'Linonico') }} ( mY nOtEs are your notes... )
             </div>
           </div>
         </div>
