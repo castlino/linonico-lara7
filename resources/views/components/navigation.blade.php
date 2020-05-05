@@ -18,7 +18,7 @@
               
                 <ul class="navbar-nav mx-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" href="{{ route('home') }}">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{{ route('homepage') }}">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="{{ route('note.index') }}">Notes</a>
