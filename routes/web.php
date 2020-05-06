@@ -16,11 +16,10 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', 'NoteController@index')->name('homepage');
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@homepage')->name('homepage');
+Route::get('/about', 'PageController@about')->name('about');
 
 Route::get('/notes', 'NoteController@index')->name('note.index');
 Route::get('/note/import', 'NoteController@import')->name('note.import');

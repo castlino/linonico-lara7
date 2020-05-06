@@ -1,14 +1,5 @@
 <div class="component-navigation">
     <!-- Simplicity is an acquired taste. - Katharine Gerould -->
-    <div class="container main-brand-bar">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="linonico-bar">
-                {{ config('app.name', 'Linonico') }} - mY nOtEs are your nOtEs
-            </div>
-          </div>
-        </div>
-    </div>
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -24,7 +15,7 @@
                     <a class="nav-link" href="{{ route('note.index') }}">Notes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="{{ route('about') }}">About</a>
                   </li>
                   @guest
                   {{--
@@ -61,5 +52,4 @@
             </div>
         </div>
     </nav>
-    
 </div>

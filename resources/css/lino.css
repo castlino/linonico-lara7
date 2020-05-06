@@ -12,5 +12,9 @@
 }
 
 .linonico-bar {
+  text-align: right;
+}
+
+.homepage .card-body p {
   text-align: center;
 }
