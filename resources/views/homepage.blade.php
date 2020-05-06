@@ -9,7 +9,7 @@
                 <div class="card-body">                  
                       <p>Hi and welcome to my linonico site! Feel free to browse around the site.</p>
                       <p>
-                        The site is just about my previous notes about my work that I decided should be public to anyone who might find it usefull.
+                        The site contains notes about my work that I decided should be public for anyone who might find it usefull.
                       </p>
                       <p>
                         <a href="{{ route('note.index') }}">Go to all notes...</a>
