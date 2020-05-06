@@ -6,7 +6,7 @@
 <div class="container">
     <div class="row justify-content-center">
       @foreach ($notes as $note)
-          <div class="col-sm-3">
+          <div class="col-sm-3 pb-4">
               <div class="card">
                   <div class="card-header"><a href="{{ route('note.view', $note->slug) }}">{{ $note->title }}</a></div>
 
