@@ -46,8 +46,23 @@ class NoteController extends Controller
     
     public function admin_edit(Note $note){
       //$note = Note::findOrFail($note);
-      return $note;   // return json in frontend...
+      //return $note;   // return json in frontend...
 
-      //return view('note/view', ['slug' => $slug, 'note'=>$note]);
+      return view('note/edit', ['note'=>$note]);
     }
+    
+    public function admin_update(Note $note){
+      //return $note;
+      request()->validate([
+        'title' => 'required',
+        'body' => 'required'
+      ]);
+      
+      $note->title = request('title');
+      $note->body = request('body');
+      $note->save();
+
+      return redirect()->route('note.view', [$note]);
+    }
+    
 }

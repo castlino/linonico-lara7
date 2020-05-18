@@ -24,4 +24,6 @@ Route::get('/about', 'PageController@about')->name('about');
 Route::get('/notes', 'NoteController@index')->name('note.index');
 Route::get('/note/import', 'NoteController@import')->name('note.import');
 Route::get('/note/{slug}', 'NoteController@view')->name('note.view');
+
 Route::get('/admin/note/edit/{note}', 'NoteController@admin_edit')->name('note.edit');
+Route::put('/admin/note/update/{note}', 'NoteController@admin_update')->name('note.update');
