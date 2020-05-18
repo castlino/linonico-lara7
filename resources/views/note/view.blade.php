@@ -6,10 +6,11 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Dashboard</div>
-
+		{{--
                 <div class="card-body">                  
                     This is note view area. {{ $slug }}
                 </div>
+		--}}
                 <div class="card-body">                  
                     {!! $note->body !!}
                 </div>
